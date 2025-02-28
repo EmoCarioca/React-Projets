@@ -1,24 +1,14 @@
 "use client"
+import Eg from "@/components/contador"
+import { Task } from "@/components/task"
+import { useReducer } from "react"
 
-import { Footer } from "@/components/footer"
-import { Header } from "@/components/header"
-import { PostProvider } from "./data/listp"
-import { PostList } from "./data/postlist"
-
-
-export const pag = () => {
-
-
-
+export const eg = () => {
     return (
-        <PostProvider>
-            <div className="container mx-auto ">
-                <Header />
-                <PostList />
-                <Footer />
-            </div>
-        </PostProvider>
+        <Task />
+        ///<Eg />
+
     )
 }
 
-export default pag
+export default eg

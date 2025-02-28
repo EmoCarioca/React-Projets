@@ -16,6 +16,6 @@ export const PostList = () => {
                     </div>
                 ))
             }
-        </div>
+        </div >
     )
 }

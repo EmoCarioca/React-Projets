@@ -1,5 +1,5 @@
 import { Posts } from "@/app/data/listpt"
-import { createContext, ReactNode, useReducer, useState } from "react"
+import { createContext, ReactNode, useContext, useReducer, useState } from "react"
 import { poT } from "@/reducers/postreducer"
 
 type PostCt = {
@@ -29,3 +29,5 @@ export const PostProvider = ({ children }: { children: ReactNode }) => {
         </PostContext.Provider>
     )
 }
+
+export const usePosts = useContext(PostContext )
