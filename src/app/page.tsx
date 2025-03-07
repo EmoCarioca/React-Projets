@@ -6,7 +6,7 @@ export const eg = () => {
     return (
         ///<Eg />
 
-    )
+    )   
 }
 
 export default eg
