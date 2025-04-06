@@ -1,7 +1,7 @@
 "use client"
 
 import { Footer } from "@/components/footer"
-import { Header } from "@/components/header"
+import { Header } from "@/components/cpnts/header"
 import { PostProvider } from "./data/listp"
 import { PostList } from "./data/postlist"
 

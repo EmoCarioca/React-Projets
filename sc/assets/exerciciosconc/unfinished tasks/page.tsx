@@ -1,6 +1,6 @@
 "use client"
-import Eg from "@/components/contador"
-import { Task } from "@/components/task"
+import Eg from "@/components/cpnts/contador"
+import { Task } from "@/components/cpnts/task"
 import { useReducer } from "react"
 
 export const eg = () => {
