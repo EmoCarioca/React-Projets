@@ -1,21 +1,27 @@
 "use client"
-import axios from "axios"
+import { api } from "@/utils/api"
 
-export const pag = () => {
-    const HDPN = async () => {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
-            .then((response) => {
-                console.log(response)
-            })
+const pag = () => {
+    const handleaddP = async () => {
+        const response = await api.post("/posts", {
+            userId: 99,
+            title: 'teste',
+            body: 'teste'
+        })
+
+        if (response.data.id) {
+            console.log('esta certo')
+        } else {
+            console.log('esta errado')
+        }
+
     }
 
     return (
-        <div className="container mx-auto">
-            <h1 className="text-2xl mt-4">Upload image</h1>
-            <button onClick={HDPN}>Get Posts</button>
+        <div>
+            <button onClick={handleaddP}>Pega posts</button>
         </div>
     )
-
 }
 
 export default pag
